@@ -1,4 +1,4 @@
-bene = 59
+bene = 60
 
 if (bene >= 60):
     print('Você tem direito aos beneficios')
