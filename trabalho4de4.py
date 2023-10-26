@@ -38,7 +38,7 @@ def consultar_livro():
       print('Você escolheu a opção Livros por Código')
       codigo_desejado = int(input('Entre com o Código do Livro'))
       for livro in lista_livros:
-        if livro['livro'] == codigo_desejado: # o valor do campo codigo desse id_global e igual o valor desejado
+        if livro['id'] == codigo_desejado: # o valor do campo codigo desse id_global e igual o valor desejado
           print('--------------------------')
           for key, value in livro.items(): # varrer todos os conjuntos chave e valor do dicionario produto
             print('{}:{}' .format(key,value)) # imprime chave e valor no terminal
