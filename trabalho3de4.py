@@ -60,7 +60,7 @@ def servico_extra():
         print('Digite uma das opções 1/2/0')
   
 
-print('Bem vindo a Copiadora do Hudson Cleiton de Paula')
+print('-----|Bem vindo a Copiadora do Hudson Cleiton de Paula|-----')
 servicos = escolha_servico()
 paginas = num_pagina()
 extra = servico_extra()
