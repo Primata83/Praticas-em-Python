@@ -1,19 +1,20 @@
 #------------------inicio da variaveis globais------------------
 lista_livros = []
 codigo_livro = 0
-
 #-----------------fim das variaveis globais-----------------
 
 #-----------------inicio de cadastrar produto-----------------
 def cadastrar_livro(codigo):
   print('Bem vindo ao menu de Cadastrar Livro')
   print('Código do Produto {}'.format(codigo))
-  nome = input('Coloque o NOME do Livro:')
   id = input('Entre com o ID do Livro:')
+  nome = input('Coloque o NOME do Livro:')
   autor = input('Nome do AUTOR do Livro:')
-  id_global = {'nome'   : nome,
-               'id'     : id,
-               'autor'  : autor}
+  editora = input('Nome da EDITORA do Livro:')
+  id_global = {'id'      : id,
+               'nome'    : nome,
+               'autor'   : autor,
+               'editora' : editora}
   lista_livros.append(id_global.copy())             
 #-----------------fim de cadastrar produto-----------------
 
@@ -61,14 +62,12 @@ def consultar_livro():
 
 #-----------------inicio de Remover Livro-----------------
 def remover_livro():
-  print('Bem vindo ao menu de Remover Livro')
-  codigo_desejado = int(input('Entre com o ID do produto que deseja remover'))
+  print('Digite o ID do Livro para ser Removido')
+  codigo_desejado = int(input('Entre com o ID do produto que deseja remover: '))
   for livro in lista_livros:
-    if livro['codigo'] == codigo_desejado:
+    if livro['id'] == codigo_desejado:
       lista_livros.remove(livro)
       print('Livro Removido')
-
-
 #-----------------fim de Remover Livro-----------------
 
 #-----------------INICIO DO MENU PRINCIPAL-----------------
@@ -86,7 +85,7 @@ while True:
   elif opcao_principal == '2':
     consultar_livro()
   elif opcao_principal == '3':
-    consultar_livro()
+    remover_livro()
   elif opcao_principal == '4':
     break # encerra o laço principal e o programa acaba
   else:
