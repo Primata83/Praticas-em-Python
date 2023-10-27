@@ -37,7 +37,7 @@ def consultar_livro():
         print('--------------------------')
     elif opcao_consultar == '2':
       print('Você escolheu a opção Livros por Código')
-      codigo_desejado = int(input('Entre com o Código do Livro'))
+      codigo_desejado = input('Entre com o Código do Livro:')
       for livro in lista_livros:
         if livro['id'] == codigo_desejado: # o valor do campo codigo desse id_global e igual o valor desejado
           print('--------------------------')
@@ -46,7 +46,7 @@ def consultar_livro():
         print('--------------------------') 
     elif opcao_consultar == '3':
       print('Você escolheu a opção Livro(s) por Autor')
-      codigo_desejado = input('Escolha Livros por Autor')
+      codigo_desejado = input('Escolha Livros por Autor:')
       for livro in lista_livros:
         if livro['autor'] == codigo_desejado: # o valor do campo codigo desse id_global e igual o valor desejado
           print('--------------------------')
