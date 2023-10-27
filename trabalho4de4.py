@@ -63,11 +63,11 @@ def consultar_livro():
 #-----------------inicio de Remover Livro-----------------
 def remover_livro():
   print('Digite o ID do Livro para ser Removido')
-  codigo_desejado = int(input('Entre com o ID do produto que deseja remover: '))
+  codigo_desejado = input('Entre com o ID do produto que deseja remover: ')
   for livro in lista_livros:
     if livro['id'] == codigo_desejado:
       lista_livros.remove(livro)
-      print('Livro Removido')
+      print('Livro Removido!')
 #-----------------fim de Remover Livro-----------------
 
 #-----------------INICIO DO MENU PRINCIPAL-----------------
