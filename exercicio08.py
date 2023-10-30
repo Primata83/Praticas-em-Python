@@ -3,11 +3,14 @@
 #(exercicio da apostila - aula 3)
 
 print('CALCULADORA')
+print('-------------------')
 print('+ Adição')
 print('- Subtração')
 print('* Multiplicação')
 print('/ Divisão')
+print('-------------------')
 print('Pressione outra tecla para sair')
+print('*******************************')
 
 op = input('Qual operação deseja fazer?')
 if op == '+' or op == '-' or op == '*' or op == '/':
