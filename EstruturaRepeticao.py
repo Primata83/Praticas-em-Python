@@ -7,7 +7,7 @@ while(x <= 99):
     x = x + 1
 """
 
-
+"""
 #EXERCICIO: while > Pegando os numeros pares de 5 a 10
 
 inicial = int(input('digite o um numero inicial:'))# a palavra ``input`` pede para o usuario colocar uma entrada do usuario pelo console e SEMPRE sera uma string
@@ -20,4 +20,11 @@ while (x <= final): #---- passando para o programa q o loop só vai até a varia
     if (x % 2 == 0): #--- verificando se é par ou não (sendo x = inicial, usando %)
         print(x) # ------ saida
     x = x + 1 # --------- incremento
+"""
+
+nome = "Alice"
+idade = 30
+
+mensagem = f"Olá, meu nome é {nome} e tenho {idade} anos."
+
     
