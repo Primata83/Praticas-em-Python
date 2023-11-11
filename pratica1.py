@@ -9,6 +9,6 @@
 
 var = 'hudson'
 meio = 'cleiton'
-semi = 'de' 
+semi = 'de'
 vari = 'paula'
-print (var, meio, semi, vari)
+print (5 * (var, meio, semi, vari ))
